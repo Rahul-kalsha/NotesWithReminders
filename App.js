@@ -65,18 +65,22 @@ const App: () => Node = () => {
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
+  const safeAreaViewStyle = {
+    backgroundColor: backgroundStyle,
+    flex:1
+  }
   // const {userToken, isLoading} = useContext(AuthContext); 
   // console.warn(userToken, isLoading)
   return (
-    // <SafeAreaView style={backgroundStyle}>
-    <AuthProvider>
-      <AppNav></AppNav>
-      {/* <NavigationContainer>
-          <LoginComponent></LoginComponent>
-          <HomeComponent isDarkMode={isDarkMode ? 'light-content' : 'dark-content'} backgroundColor={backgroundStyle.backgroundColor} />
-        </NavigationContainer> */}
-    </AuthProvider>
-    // </SafeAreaView>
+    <SafeAreaView style={safeAreaViewStyle}>
+      <AuthProvider>
+        <AppNav></AppNav>
+        {/* <NavigationContainer>
+            <LoginComponent></LoginComponent>
+            <HomeComponent isDarkMode={isDarkMode ? 'light-content' : 'dark-content'} backgroundColor={backgroundStyle.backgroundColor} />
+          </NavigationContainer> */}
+      </AuthProvider>
+    </SafeAreaView>
     // <StatusBar
     //   barStyle={isDarkMode ? 'light-content' : 'dark-content'}
     //   backgroundColor={backgroundStyle.backgroundColor}

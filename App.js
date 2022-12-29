@@ -69,7 +69,6 @@ const App: () => Node = () => {
   // console.warn(userToken, isLoading)
   return (
     // <SafeAreaView style={backgroundStyle}>
-    // </SafeAreaView>
     <AuthProvider>
       <AppNav></AppNav>
       {/* <NavigationContainer>
@@ -77,6 +76,7 @@ const App: () => Node = () => {
           <HomeComponent isDarkMode={isDarkMode ? 'light-content' : 'dark-content'} backgroundColor={backgroundStyle.backgroundColor} />
         </NavigationContainer> */}
     </AuthProvider>
+    // </SafeAreaView>
     // <StatusBar
     //   barStyle={isDarkMode ? 'light-content' : 'dark-content'}
     //   backgroundColor={backgroundStyle.backgroundColor}

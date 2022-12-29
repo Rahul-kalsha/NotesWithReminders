@@ -4,10 +4,15 @@ export const headingText = {
   alignSelf: 'flex-start',
   padding: 10,
   fontWeight: theme.FONT_WEIGHT_BOLD,
+  fontFamily: 'Roboto',
+  fontWeight: '400',
+  // fontStyle: 'italic'
 };
 
 export const textInput = {
   padding: theme.TEXT_INPUT_PADDING,
   backgroundColor: theme.BACKGROUND_COLOR_LIGHT,
-  alignSelf: 'stretch'
+  alignSelf: 'stretch',
+  fontFamily: 'Roboto',
+  fontWeight: '400',
 };

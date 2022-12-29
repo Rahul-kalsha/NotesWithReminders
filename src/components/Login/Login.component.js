@@ -1,6 +1,5 @@
 import React, { useContext, useEffect } from 'react'
-import { View, Text } from 'react-native'
-import styles from './Login.component.style'
+import { View, Text, StyleSheet } from 'react-native'
 import { headingText } from '../../styles/common.style'
 import { AuthContext } from '../../context/AuthContext'
 
@@ -13,5 +12,7 @@ const Login = () => {
         </View>
     )
 }
+const styles = StyleSheet.create({
 
+});
 export default Login

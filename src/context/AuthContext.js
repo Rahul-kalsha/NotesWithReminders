@@ -3,7 +3,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 export const AuthContext = createContext();
 export const AuthProvider = ({children}) => {
   const [userToken, setUserToken] = useState(null);
-  const [isLoading, setLoading] = useState(true);
+  const [isLoading, setLoading] = useState(false);
   const login = () => {
     setLoading(true); 
     setUserToken('ABC');
@@ -27,7 +27,7 @@ export const AuthProvider = ({children}) => {
     }
   };
   useEffect(() => {
-    login();
+    // login();
     // isLoggedIn();
   }, []);
   return (

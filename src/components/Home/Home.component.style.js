@@ -6,11 +6,14 @@ export default StyleSheet.create({
         paddingVertical: theme.CONTAINER_PADDING,
         alignItems: 'center'
     },
-    textAreaTitle: {
+    textTitle: {
         fontSize: theme.FONT_SIZE_MEDIUM,
         fontWeight: theme.FONT_WEIGHT_BOLD,
         alignSelf: 'flex-start',
-        padding: 10
+        padding: 10,
+        fontFamily: 'Roboto',
+        fontWeight: '700',
+        fontSize: 18
     },
     textArea: {
         flex: 1,

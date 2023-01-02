@@ -15,5 +15,5 @@ export default {
     TEXT_COLOR: 'white',
     BUTTON_BG_COLOR: '#2d665f',
     BUTTON_TEXT_COLOR: 'white',
-    BUTTON_FONT_SIZE: 30
+    BUTTON_FONT_SIZE: 16
 }

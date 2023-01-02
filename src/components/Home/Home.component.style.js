@@ -13,7 +13,7 @@ export default StyleSheet.create({
         padding: 10,
         fontFamily: 'Roboto',
         fontWeight: '700',
-        fontSize: 18
+        fontSize: 18,
     },
     textArea: {
         flex: 1,

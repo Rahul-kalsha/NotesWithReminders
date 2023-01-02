@@ -54,6 +54,22 @@ const commonStyle = StyleSheet.create({
     borderWidth: 1, 
     borderColor: theme.BUTTON_BG_COLOR, 
     borderRadius: 5
+  },
+  customButton: {
+    color: theme.TEXT_COLOR,
+    backgroundColor: theme.BUTTON_BG_COLOR,
+    fontSize: theme.BUTTON_FONT_SIZE,
+    margin: 10,
+    padding: 10,
+    borderWidth: 1, 
+    borderColor: theme.BUTTON_BG_COLOR, 
+    borderRadius: 5
+  },
+  customButtonText: {
+    fontFamily: 'Roboto',
+    fontWeight: theme.FONT_WEIGHT_MEDIUM,
+    color: theme.TEXT_COLOR,
+    fontSize: theme.BUTTON_FONT_SIZE
   }
 });
 export default commonStyle

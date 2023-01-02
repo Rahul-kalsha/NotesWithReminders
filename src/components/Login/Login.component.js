@@ -20,6 +20,8 @@ const Login = ({navigation}) => {
   const buttonPressEvent = () => {
     if (!name.text.trim() || !email.text.trim()) {
       Alert.alert('Please fill all the fields');
+    } else if (name.error || email.error) {
+      Alert.alert(name.error ? 'Name is incorrect' : 'Email is incorrect');
     } else {
       login(name, email);
     }

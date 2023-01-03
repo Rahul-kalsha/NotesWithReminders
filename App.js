@@ -72,7 +72,7 @@ const App: () => Node = () => {
   // const {userToken, isLoading} = useContext(AuthContext); 
   // console.warn(userToken, isLoading)
   return (
-    <SafeAreaView style={safeAreaViewStyle}>
+    <SafeAreaView style={safeAreaViewStyle} forceInset={{ bottom: 'never' }}>
       <AuthProvider>
         <AppNav></AppNav>
         {/* <NavigationContainer>

@@ -1,7 +1,8 @@
 import React from 'react'
 import {View, Text} from 'react-native'
 
-const NotesList = () => {
+const NotesList = (navigate) => {
+  // console.log('??navigate1??', JSON.stringify(navigate, null, 2))
   return (
     <View>
       <Text>NotesList</Text>
